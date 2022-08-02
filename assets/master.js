@@ -1,6 +1,17 @@
 let _addBtn = document.querySelector('main>section>section>button')
 let _titleInput = document.getElementById('inputField')
 
+_titleInput.addEventListener("keypress", function (event) {
+    if (event.key === "Enter") {
+        event.preventDefault()
+        _addBtn.click()
+    }
+})
+
+function _focus() {
+    _titleInput.focus()
+}
+
 function _btnEnable() {
     if (_titleInput.value != 0) {
         _addBtn.disabled = false
@@ -53,6 +64,7 @@ function _newTask() {
         this.parentElement.parentElement.children[0].children[1].innerHTML = _titleInput.value
         _clearInput()
         _btnEnable()
+        _focus()
     }
 
     function _remove() {
@@ -65,5 +77,6 @@ function _newTask() {
 
     _clearInput()
     _btnEnable()
+    _focus()
 }
 
