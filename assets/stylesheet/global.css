@@ -1,0 +1,211 @@
+main {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  padding: 30px 0;
+}
+main > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  outline: 2px solid #7373bd;
+  width: 250px;
+  padding: 15px;
+  margin: 15px;
+  border-radius: 5px;
+}
+main > div:nth-of-type(1) {
+  flex-direction: column;
+}
+main > div:nth-of-type(1) > h2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #7373bd;
+  margin-bottom: 6px;
+}
+main > div:nth-of-type(1) > h2 > a {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  -moz-text-align-last: center;
+       text-align-last: center;
+}
+main > div:nth-of-type(1) > h2:hover {
+  color: orangered;
+}
+main > div:nth-of-type(1) > nav {
+  margin-top: 6px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+main > div:nth-of-type(1) > nav > a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main > div:nth-of-type(1) > nav > a > i {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  font-size: 1.5rem;
+}
+main > div:nth-of-type(1) > nav > a:hover {
+  color: orangered;
+}
+main > div:nth-of-type(1) > nav > a:nth-of-type(2) {
+  margin: 0 20px;
+}
+main > section {
+  width: 600px;
+  padding: 10px;
+  margin: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  outline: 2px solid #343450;
+  border-radius: 5px;
+}
+main > section > h1 {
+  width: 100%;
+  height: 55px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  font-weight: 100;
+}
+main > section > section {
+  width: 400px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+main > section > section > #inputField {
+  width: 80%;
+  height: 100%;
+  padding: 0 8px;
+  border: 1px solid #343450;
+  border-radius: 4px 0 0 15px;
+}
+main > section > section > button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20%;
+  height: 100%;
+  border: 0;
+  border-radius: 0 15px 4px 0;
+  cursor: pointer;
+  background: rgba(52, 52, 80, 0.1529411765);
+  border: 0px solid #343450;
+  font-size: 1rem;
+  font-weight: bolder;
+}
+main > section > section > button:hover {
+  color: #f0f0f0;
+  background: #7373bd;
+}
+main > section > section > button:active {
+  color: #7373bd;
+  background: rgba(52, 52, 80, 0.1529411765);
+}
+main > section > #taskContainer {
+  width: 100%;
+}
+main > section > #taskContainer > li {
+  width: 100%;
+  min-height: 40px;
+  max-height: -webkit-fit-content;
+  max-height: -moz-fit-content;
+  max-height: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 10px;
+}
+main > section > #taskContainer > li > section:nth-of-type(1) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main > section > #taskContainer > li > section:nth-of-type(1) > input {
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+}
+main > section > #taskContainer > li > section:nth-of-type(1) > input:checked + label {
+  color: rgba(52, 52, 80, 0.5019607843);
+  text-decoration: line-through;
+}
+main > section > #taskContainer > li > section:nth-of-type(1) > label {
+  padding: 0 10px;
+  max-width: 450px;
+  word-wrap: break-word;
+  -webkit-hyphens: auto;
+      -ms-hyphens: auto;
+          hyphens: auto;
+}
+main > section > #taskContainer > li > section:nth-of-type(2) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main > section > #taskContainer > li > section:nth-of-type(2) > button {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #343450;
+  border-radius: 50%;
+  margin: 0 2px;
+}
+main > section > #taskContainer > li > section:nth-of-type(2) > button > i {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  overflow: hidden;
+  font-size: 1.3rem;
+}
+main > section > #taskContainer > li > section:nth-of-type(2) > button:hover {
+  color: #f0f0f0;
+  background: #343450;
+}
+main > section > #taskContainer > li > section:nth-of-type(2) > button:nth-of-type(1) > i {
+  font-size: 1.1rem;
+}
+main > div:nth-of-type(2) > p {
+  text-align: justify;
+  -moz-text-align-last: justify;
+       text-align-last: justify;
+  line-height: 24px;
+}
+main > div:nth-of-type(2) > p > strong {
+  color: #7373bd;
+  background: rgba(52, 52, 80, 0.1529411765);
+  padding: 2px 4px;
+  border-radius: 5px;
+}
+main > div:nth-of-type(2) > p > span {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  transform: scale(-1, 1);
+  background: rgba(52, 52, 80, 0.1529411765);
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+}/*# sourceMappingURL=global.css.map */
