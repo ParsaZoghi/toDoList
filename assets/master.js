@@ -2,16 +2,16 @@ let _addBtn = document.querySelector('main>section>section>button')
 let _titleInput = document.getElementById('inputField')
 
 function _btnEnable() {
-    if (_titleInput.value == 0) {
-        _addBtn.disabled = true
+    if (_titleInput.value != 0) {
+        _addBtn.disabled = false
         for (let j = 0; j < _ul.childElementCount; j++) {
-            document.getElementsByClassName('editBtn')[j].disabled = true
+            document.getElementsByClassName('editBtn')[j].disabled = false
         }
     }
     else {
-        _addBtn.disabled = false
+        _addBtn.disabled = true
         for (let _j = 0; _j < _ul.childElementCount; _j++) {
-            document.getElementsByClassName('editBtn')[_j].disabled = false
+            document.getElementsByClassName('editBtn')[_j].disabled = true
         }
     }
 }
